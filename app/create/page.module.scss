@@ -19,7 +19,7 @@
         width: 100%;
 
         background-color: #ffffff;
-        
+
         &__contents {
             display: flex;
             flex-direction: column;
@@ -72,7 +72,7 @@
 
     &__body {
         display: flex;
-        align-items: center;
+        align-items: flex-start; // TODO: 추후 수정 예정
         justify-content: center;
 
         width: 100%;

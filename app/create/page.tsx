@@ -1,8 +1,11 @@
 import Image from "next/image"
 import LabelCalendar from "@/components/calendar/LabelCalendar"
+import BasicBoard from "@/components/board/BasicBoard"
+
 // shadcn ui
 import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
+
 // css
 import styles from "./page.module.scss"
 
@@ -30,13 +33,14 @@ function page() {
                 </div>
             </header>
             <main className={styles.container__body}>
-                <div className={styles.container__body__infoBox}>
-                  <span className={styles.title}>There is no board yet.</span>
-                  <span className={styles.subTitle}>Click the button and start flashing!</span>
-                  <button className={styles.button}>
-                    <Image src="/assets/images/button.svg" alt="round-button" width={100} height={100}></Image>
-                  </button>
-                </div>
+                {/* <div className={styles.container__body__infoBox}>
+                    <span className={styles.title}>There is no board yet.</span>
+                    <span className={styles.subTitle}>Click the button and start flashing!</span>
+                    <button className={styles.button}>
+                        <Image src="/assets/images/button.svg" alt="round-button" width={100} height={100}></Image>
+                    </button>
+                </div> */}
+                <BasicBoard />
             </main>
         </div>
     )
